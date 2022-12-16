@@ -33,9 +33,29 @@ export class ApiService {
     return this.http.get("http://localhost:8008/viewSecurity")
   }
   EmployeeLogin = (data:any) =>{
-    return this.http.post("http://localhost:8008/employeelogin",data)
-    
+    return this.http.post("http://localhost:8008/employeelogin",data) 
   }
+  SecurityLogin = (data:any) =>{
+    return this.http.post("http://localhost:8008/securitylogin",data) 
+  }
+  ApplyLeave = (data:any) =>{
+    return this.http.post("http://localhost:8008/addleave",data) 
+  }
+  LeaveDetails = (data:any) =>{
+    return this.http.post("http://localhost:8008/getLeaveDetails",data) 
+  }
+  LeaveDetailsId = (data:any) =>{
+    return this.http.post("http://localhost:8008/viewLeavesById",data) 
+  }
+    ViewLog = () =>{
+      return this.http.get("http://localhost:8008/viewAllLogs")
+    }
+    AddLog = (data:any) =>{
+      return this.http.post("http://localhost:8008/addlog",data)
+    }
+    ExitLog = (data:any) =>{
+      return this.http.post("http://localhost:8008/logout",data)
+    }
+    
   
-
 }

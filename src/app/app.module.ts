@@ -17,11 +17,20 @@ import { ViewSecurityComponent } from './view-security/view-security.component';
 import { SearchSecurityComponent } from './search-security/search-security.component';
 import { HomeComponent } from './home/home.component';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
+import { HomeNavComponent } from './home-nav/home-nav.component';
+import { SecurityLoginComponent } from './security-login/security-login.component';
+import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
+import { EmployeenavComponent } from './employeenav/employeenav.component';
+import { LeaveStatusComponent } from './leave-status/leave-status.component';
+import { SecurityLogViewComponent } from './security-log-view/security-log-view.component';
+import { AddLogComponent } from './add-log/add-log.component';
+import { SecNAVComponent } from './sec-nav/sec-nav.component';
+import { AdminleaveComponent } from './adminleave/adminleave.component';
 
 const myRoute : Routes = [
   {
     path:"",
-    component:AdminLoginComponent
+    component:HomeComponent
   },
   {
     path:"addEmployee",
@@ -48,12 +57,36 @@ const myRoute : Routes = [
     component:SearchSecurityComponent
   },
   {
-    path:"home",
-    component:HomeComponent
+    path:"admin",
+    component:AdminLoginComponent
   },
   {
     path:"employeelogin",
     component:EmployeeLoginComponent
+  },
+  {
+    path:"securitylogin",
+    component:SecurityLoginComponent
+  },
+  {
+    path:"applyleave",
+    component:ApplyLeaveComponent
+  },
+  {
+    path:"viewleaveemp",
+    component:LeaveStatusComponent
+  },
+  {
+    path:"securitylog",
+    component:SecurityLogViewComponent
+  },
+  {
+    path:"addlog",
+    component:AddLogComponent
+  },
+  {
+    path:"adminleave",
+    component:AdminleaveComponent
   }
 ]
 
@@ -70,7 +103,16 @@ const myRoute : Routes = [
     ViewSecurityComponent,
     SearchSecurityComponent,
     HomeComponent,
-    EmployeeLoginComponent
+    EmployeeLoginComponent,
+    HomeNavComponent,
+    SecurityLoginComponent,
+    ApplyLeaveComponent,
+    EmployeenavComponent,
+    LeaveStatusComponent,
+    SecurityLogViewComponent,
+    AddLogComponent,
+    SecNAVComponent,
+    AdminleaveComponent
   ],
   imports: [
     BrowserModule,

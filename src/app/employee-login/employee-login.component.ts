@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApiService } from '../api.service';
 
 @Component({
@@ -10,7 +11,7 @@ export class EmployeeLoginComponent {
   empEmail=""
   password=""
 
-  constructor(private api:ApiService){}
+  constructor(private api:ApiService, private router:Router){}
 
   readValue = () =>{
     let data:any = {"empEmail":this.empEmail,"password":this.password}
@@ -20,7 +21,9 @@ export class EmployeeLoginComponent {
         console.log(response)
         if(response.status=="success")
         {
-          alert("yea")
+          localStorage.setItem("userInfo",response.userInfo)
+          this.router.navigate(["/applyleave"])
+          
         }
         else("um")
       }
