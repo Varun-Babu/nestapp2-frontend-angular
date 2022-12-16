@@ -16,7 +16,6 @@ export class AdminLoginComponent {
     let data:any ={"username":this.username,"password":this.password}
     console.log(data)
     if(this.username == "admin" && this.password == "admin"){
-      alert("login successfull")
       this.router.navigate(["/addEmployee"])
 
     }

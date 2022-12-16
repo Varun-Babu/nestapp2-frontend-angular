@@ -1,0 +1,42 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                
+                <h1 style="text-align: center;">Add Employee</h1>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Employee Name</label>
+                    <input name="empName" [(ngModel)]="empName" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Employee Designation</label>
+                    <input name="empDesignation" [(ngModel)]="empDesignation" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <label for="exampleFormControlTextarea1" class="form-label">Email id</label>
+                        <input name="empDesignation" [(ngModel)]="empDesignation" type="text" class="form-control">
+                      </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Phone Number</label>
+                    <input name="empPhone" [(ngModel)]="empPhone" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Username</label>
+                    <input name="username" [(ngModel)]="username" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Password</label>
+                    <input name="password" [(ngModel)]="password" type="password" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Confirm Password</label>
+                    <input name="confPassword" [(ngModel)]="confPassword" type="password" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click)="readValue()" class="btn btn-dark">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
